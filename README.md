@@ -86,6 +86,9 @@ The graph shows that the average housing price has been increasing steadily over
 Zipcode 10021,10011, 10014, 10128 in New York has properties with the highest value, followed by 94027 in California and 81611 in Colorado, and the other remaining Zipcodes range between 2 to 3 Million.
 
 ![state_price.png](images/state_price.png)
+
+As observed, the percentage of return on investents for the top ten states had a crash in 2008 to 2012 and then from there they all have an upward linear trend. This also depicts the rising trent has been from 2012 onwards meaning 2018 remains highest in terms of investments returns.
+
 ***
 ### Modelling
 
