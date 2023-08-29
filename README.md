@@ -63,7 +63,7 @@ This stage focussed on data cleaning in preparation for analysis. This included;
 this stage of the analysis focused on such as:
 distribution of zip codes in
 
-![zipcode.jpg](images/zipcode.jpg)
+![zipcode.png](images/zipcode.png)
 
 ***
 ### Modelling
