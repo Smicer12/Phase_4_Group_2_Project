@@ -60,13 +60,6 @@ The key columns in the dataset are as follows:
 `Months Column` These Columns contains the prices of Region for every month.
 
 ***
-### Data processing
-This stage focussed on data cleaning in preparation for analysis. This included;
-* Checking for duplicates.
-* Checking for missing values. Columns with very high number of missing values were dropped
-* Reshaping from Wide to Long Format
-
-***
 ### Exploratory Data Analysis
 this stage of the analysis focused on such as:
 
@@ -88,6 +81,17 @@ Zipcode 10021,10011, 10014, 10128 in New York has properties with the highest va
 ![state_price.png](images/state_price.png)
 
 As observed, the percentage of return on investents for the top ten states had a crash in 2008 to 2012 and then from there they all have an upward linear trend. This also depicts the rising trent has been from 2012 onwards meaning 2018 remains highest in terms of investments returns.
+
+***
+### Data processing
+Prior to modeling, a thorough assessment of data stationarity will be conducted using the following methods:
+
+1. Dickey-Fuller Test: The Dickey-Fuller test will be employed to assess the stationarity of the data. This statistical test helps determine if a unit root is present in the series, which is indicative of non-stationarity.
+
+2. Rolling Mean Analysis: Additionally, a rolling mean analysis will be performed. This involves calculating the mean over a sliding window of observations. Fluctuations in the rolling mean indicate non-stationarity.
+
+In cases where the data is identified as non-stationary, a differencing technique will be applied. Differencing involves computing the difference between consecutive observations. This process helps transform the data into a stationary form, enabling more accurate modeling and analysis.
+
 
 ***
 ### Modelling
