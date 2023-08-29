@@ -3,7 +3,7 @@
 
 ### Table of contents 
  - [Business Understanding](#Business-Understanding)
- - [1.1 Background](#Background)
+ - [1.1 Background](##Background)
  - [1.2 Project Overview](#Project-Overview)
  - [1.3 Project Question](#Project-Question)
  - [1.4 Objectives](#Objectives)
