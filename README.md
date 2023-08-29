@@ -73,12 +73,19 @@ this stage of the analysis focused on such as:
  1. distribution of zip codes.
 
 ![zipcode.png](images/zipcode.png)
-
+Based on the bar graph above, this shows that Los Angeles is the most popular county with around 70000 zipcodes.Most of the other counties range between 30000 and 50000 zipcodes.
 
 2. Average housing price pattern/trend over the years, that is, from year 1996 to 2018
 
 ![price.png](images/price.png)
+The graph shows that the average housing price has been increasing steadily over the years, with a dip between 2007 and 2012, during the financial crisis. Since then, the average housing price has rebounded and continued to rise
 
+3. poperty value and distribution
+![property_value.png](images/property_value.png)
+
+Zipcode 10021,10011, 10014, 10128 in New York has properties with the highest value, followed by 94027 in California and 81611 in Colorado, and the other remaining Zipcodes range between 2 to 3 Million.
+
+![state_price.png](images/state_price.png)
 ***
 ### Modelling
 
