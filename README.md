@@ -40,15 +40,23 @@ This Project aims at answering the question:
 ***
 ### Data Understanding
 The key columns in the dataset are as follows:
+
 `RegionID` This is unique Id for the Regions.
 
 `RegionName` - This is the ranking done based on the size of the Region.
+
 `SizeRank` This field contains the zip code of the Region.
+
 `RegionType` Type of Region is Zip.
+
 `StateName` State.
+
 `City` This column provide the specific City Name of Housing Data.
+
 `Metro` This provide the name of the metro city around that Region.
+
 `County Name` This is the County Name for that Region.
+
 `Months Column` These Columns contains the prices of Region for every month.
 
 ***
@@ -61,7 +69,8 @@ This stage focussed on data cleaning in preparation for analysis. This included;
 ***
 ### Exploratory Data Analysis
 this stage of the analysis focused on such as:
-distribution of zip codes in
+
+ 1. distribution of zip codes.
 
 ![zipcode.png](images/zipcode.png)
 
