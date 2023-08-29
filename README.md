@@ -20,14 +20,14 @@ What are the top 5 best zip code areas for the Kar-Dak Investments to consider?
 
  #### [1.4 Objectives](#Objectives)
 1. To use Time Series Model to determine the top 5 zip codes to invest in
-To find the top 5 zip codes nationwide with the highest ROI within accepted standard deviation threshold (variability in returns)
-To Perform Forecasting for Future House Prices
-Develop time series models to forecast real estate prices for different zip codes over various time horizons.
-Evaluate the stability and predictability of real estate prices for different zip codes.
-Determine potential profit margins based on historical data and forecasted price growth.
-To Combine insights from the above analyses to make a comprehensive recommendation.
-To effectively identify cities that are optimal for both short-term and long-term investment
-To create user-friendly interfaces to facilitate easy access to forecast/ predictions and insights.
+2. To find the top 5 zip codes nationwide with the highest ROI within accepted standard deviation threshold (variability in returns)
+3. To Perform Forecasting for Future House Prices
+4. Develop time series models to forecast real estate prices for different zip codes over various time horizons.
+5. Evaluate the stability and predictability of real estate prices for different zip codes.
+6. Determine potential profit margins based on historical data and forecasted price growth.
+7. To Combine insights from the above analyses to make a comprehensive recommendation.
+8. To effectively identify cities that are optimal for both short-term and long-term investment
+9. To create user-friendly interfaces to facilitate easy access to forecast/ predictions and insights.
 
  ### [Data Understanding](#Data-Understanding)
  ### [Data Conversion](#Data-Conversion)
