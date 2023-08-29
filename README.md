@@ -74,6 +74,11 @@ this stage of the analysis focused on such as:
 
 ![zipcode.png](images/zipcode.png)
 
+
+2. Average housing price pattern/trend over the years, that is, from year 1996 to 2018
+
+![price.png](images/price.png)
+
 ***
 ### Modelling
 
