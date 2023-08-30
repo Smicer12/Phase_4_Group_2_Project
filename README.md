@@ -116,17 +116,16 @@ below is a plot of Autocorrelation Function (ACF) and Partial Autocorrelation Fu
 
 ![ACF_PCF.png](images/ACF_PCF.png)
 
-The code below fits an ARIMA model to multiple time series data corresponding to different zip codes.
-
-![baseline_model.png](images/baseline_model.png)
-
-
+#### [Model Selection](##Model-Selection)
 The best-fitting model is specified as ARIMA(2,0,3)(0,0,0)[0] intercept, indicating that it includes autoregressive (AR) terms, moving average (MA) terms, and an intercept.
 
 The model was fitted using 158 observations from February 1, 2005, to April
 1, 2018.
 
 The p-values associated with the coefficients indicate whether they are statistically significant. Small p-values suggest significant effects.
+
+#### [Model Fitting](##Model-Fitting)
+An ARIMA model was fitted to multiple time series data corresponding to different zip codes.
 ***
 #### [Model Evaluation](##Model-Evaluation)
 The model's performance was evaluated using Mean Squared Error. it was noted to have an MSE of 0.0036754150523843564. This tells us that our monthly returns would be off by 0.0037% if this model is used Which is good thing since it is not off by much.
