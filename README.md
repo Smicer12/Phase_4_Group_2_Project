@@ -20,7 +20,7 @@
 The real estate market is dynamic and influenced by an array of factors ranging from economic trends and population growth to market sentiment and regulatory changes. Kar-Dak Investments Group recognizes the need to leverage data science techniques to gain a competitive edge in identifying high-potential investment opportunities.
 
 In a constantly evolving real estate landscape, various elements, including economic shifts, population dynamics, market emotions, and regulatory shifts, converge to shape market trends. Acknowledging this complexity, the Kar-Dak Investment Group acknowledges the strategic advantage of harnessing data science methodologies to proactively uncover lucrative investment prospects.
-#### [1.2 Project Overview](#Project-Overview)
+#### [1.2 Problem statement](Problem-statement)
  The goal of this project is to assist the Kar-Dak Investment Group in identifying the top 5 most promising zip codes for real estate investment opportunities. The analysis will be conducted using the Zillow housing dataset, which encompasses housing data spanning from April 1996 to April 2018. By leveraging this dataset, the project aims to pinpoint zip codes that have demonstrated strong potential for growth and return on investment within the specified time frame.
 
 The primary objective of this project is to facilitate informed real estate investment decisions for the Kar-Dak Investment Group. By leveraging the extensive Zillow housing dataset, which spans from April 1996 to April 2018, the project aims to identify the top 5 most favorable zip codes for potential investment opportunities.
@@ -39,6 +39,12 @@ This Project aims at answering the question:
 9. To create user-friendly interfaces to facilitate easy access to forecast/ predictions and insights.
 ***
 ### Data Understanding
+In this section, we will do the following to get more insights about our dataset before proceeding to subsequent steps.
+
+1. Import the Libraries
+2. Load and Explore the Time Series Data
+3. Inspect the Data Types
+4. Inspect the column values
 The key columns in the dataset are as follows:
 
 `RegionID` This is unique Id for the Regions.
@@ -58,6 +64,8 @@ The key columns in the dataset are as follows:
 `County Name` This is the County Name for that Region.
 
 `Months Column` These Columns contains the prices of Region for every month.
+
+The dataset covers a significant time period (April 1996 to April 2018), allowing for the exploration of long-term trends and capturing various market conditions. It provides a valuable resource for conducting time series analysis and developing predictive models to forecast future stock prices
 
 ***
 ### Exploratory Data Analysis
@@ -83,7 +91,7 @@ Zipcode 10021,10011, 10014, 10128 in New York has properties with the highest va
 As observed, the percentage of return on investents for the top ten states had a crash in 2008 to 2012 and then from there they all have an upward linear trend. This also depicts the rising trent has been from 2012 onwards meaning 2018 remains highest in terms of investments returns.
 
 ***
-### Data processing
+### Data preprocessing
 Prior to modeling, a thorough assessment of data stationarity will be conducted using the following methods:
 
 1. Dickey-Fuller Test: The Dickey-Fuller test will be employed to assess the stationarity of the data. This statistical test helps determine if a unit root is present in the series, which is indicative of non-stationarity.
@@ -95,10 +103,38 @@ In cases where the data is identified as non-stationary, a differencing techniqu
 
 ***
 ### Modelling
+The goal of modeling is to provide a conceptual and organized framework that helps in making predictions or decisions based on the data.
+Since the aim is to identify the top five zipcodes to invest in, five different models for each of the top five zipcodes were developed to help investers forecast their prices and thus give the them clear path to make informed decision.
 
+#### [Baseline Model - ARIMA](##Baseline-Model--ARIMA)
+ARIMA is a popular time series forecasting model that combines autoregressive, differencing, and moving average components.
 
+Its use for price prediction is justified due to its ability to capture time-dependent patterns, handle nonlinear relationships, address stationarity, provide interpretability, and its well-established framework in time series analysis.
+An ARIMA model was used to fit multiple time series data corresponding to different zip codes as shown below:
 
+below is a plot of Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) of the dataset to determine the appropriate values of the ARIMA model parameters ("p" "d"and "q").
+
+![ACF_PCF.png](images/ACF_PCF.png)
+
+The code below fits an ARIMA model to multiple time series data corresponding to different zip codes.
+
+![baseline_model.png](baseline_model.png)
+
+The best-fitting model is specified as ARIMA(2,0,3)(0,0,0)[0] intercept, indicating that it includes autoregressive (AR) terms, moving average (MA) terms, and an intercept.
+
+The model was fitted using 158 observations from February 1, 2005, to April
+1, 2018.
+
+The p-values associated with the coefficients indicate whether they are statistically significant. Small p-values suggest significant effects.
 ***
+#### [Model Evaluation](##Model-Evaluation)
+The model's performance was evaluated using Mean Squared Error. it was noted to have an MSE of 0.0036754150523843564. This tells us that our monthly returns would be off by 0.0037% if this model is used Which is good thing since it is not off by much.
+
+####  [Forecasting for for Top five Zipcodes)](##Forecasting-for-Top-five-Zipcodes)
+Once the model was evaluated and deemed satisfactory, it was used to make future predictions as below.
+![forecasting.png](forecasting.png)
+Based on the above graph, we can conclude that investor decide to invest in any of the above zipcodes apart
+from 94301 which does not seem to have a positive return on investment.
 ### Conclusion
 
 
