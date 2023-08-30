@@ -135,10 +135,9 @@ The model's performance was evaluated using Mean Squared Error. it was noted to 
 ####  [Forecasting for for Top five Zipcodes)](##Forecasting-for-Top-five-Zipcodes)
 Once the model was evaluated and deemed satisfactory, it was used to make future predictions as below.
 ![forecasting.png](images/forecasting.png)
-Based on the above graph, we can conclude that investors can decide to invest in any of the above zipcodes apart
-from 94301 which does not seem to have a positive return on investment.
+As can be seen on the graph, zipcode 15201 has the highest return on investment followed by zipcodes 11222 and 11216. zipcode 94301 has the lowest return on investment.
 ### Conclusion
-
+Based on the above graph, we can conclude that investors can decide to invest in any of the above zipcodes apart from 94301 which does not seem to have a positive return on investment.
 
 ***
 ### Recommendations
