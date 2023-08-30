@@ -146,4 +146,4 @@ from 94301 which does not seem to have a positive return on investment.
 
 ***
 ### Limitations
-
+since the data is from the internet it is not possible to verify the validity of the data. This can result in inaccuracies, errors, and inconsistencies that can compromise the integrity of the analysis.
