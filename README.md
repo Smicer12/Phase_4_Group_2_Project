@@ -14,7 +14,8 @@
  ### [Conclusion](#Conclusion)
  ### [Recommendations](#Recommendations)
  ### [Limitations](#Limitations)
- 
+
+***
 ### Business Problem Understanding
  #### [1.1 Background](##Background)
 The real estate market is dynamic and influenced by an array of factors ranging from economic trends and population growth to market sentiment and regulatory changes. Kar-Dak Investments Group recognizes the need to leverage data science techniques to gain a competitive edge in identifying high-potential investment opportunities.
