@@ -8,9 +8,9 @@
  #### [1.3 Project Question](#Project-Question)
  #### [1.4 Objectives](#Objectives)
  ### [Data Understanding](#Data-Understanding)
- ### [Data Conversion](#Data-Conversion)
  ### [Exploratory data analysis](#Exploratory-data-analysis)
- ### [Training the model](#Training-the-model)
+ #### [Data Conversion](#Data-Conversion)
+ ### [Modelling](#Training-the-model)
  ### [Conclusion](#Conclusion)
  ### [Recommendations](#Recommendations)
  ### [Limitations](#Limitations)
@@ -69,7 +69,9 @@ The dataset covers a significant time period (April 1996 to April 2018), allowin
 
 ***
 ### Exploratory Data Analysis
-this stage of the analysis focused on such as:
+#### [Data Conversion](#Data-Conversion)
+The data was converted from a wide format to a long format before analysis.
+this stage of the analysis focused on such aspects as:
 
  1. distribution of zip codes.
 
@@ -133,7 +135,7 @@ The model's performance was evaluated using Mean Squared Error. it was noted to 
 ####  [Forecasting for for Top five Zipcodes)](##Forecasting-for-Top-five-Zipcodes)
 Once the model was evaluated and deemed satisfactory, it was used to make future predictions as below.
 ![forecasting.png](images/forecasting.png)
-Based on the above graph, we can conclude that investor decide to invest in any of the above zipcodes apart
+Based on the above graph, we can conclude that investors can decide to invest in any of the above zipcodes apart
 from 94301 which does not seem to have a positive return on investment.
 ### Conclusion
 
