@@ -112,7 +112,6 @@ Since the aim is to identify the top five zipcodes to invest in, five different 
 ARIMA is a popular time series forecasting model that combines autoregressive, differencing, and moving average components.
 
 Its use for price prediction is justified due to its ability to capture time-dependent patterns, handle nonlinear relationships, address stationarity, provide interpretability, and its well-established framework in time series analysis.
-An ARIMA model was used to fit multiple time series data corresponding to different zip codes as shown below:
 
 below is a plot of Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) of the dataset to determine the appropriate values of the ARIMA model parameters ("p" "d"and "q").
 
