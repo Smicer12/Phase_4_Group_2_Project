@@ -118,7 +118,8 @@ below is a plot of Autocorrelation Function (ACF) and Partial Autocorrelation Fu
 
 The code below fits an ARIMA model to multiple time series data corresponding to different zip codes.
 
-![baseline_model.png](baseline_model.png)
+![baseline_model.png](images/baseline_model.png)
+
 
 The best-fitting model is specified as ARIMA(2,0,3)(0,0,0)[0] intercept, indicating that it includes autoregressive (AR) terms, moving average (MA) terms, and an intercept.
 
@@ -132,7 +133,7 @@ The model's performance was evaluated using Mean Squared Error. it was noted to 
 
 ####  [Forecasting for for Top five Zipcodes)](##Forecasting-for-Top-five-Zipcodes)
 Once the model was evaluated and deemed satisfactory, it was used to make future predictions as below.
-![forecasting.png](forecasting.png)
+![forecasting.png](images/forecasting.png)
 Based on the above graph, we can conclude that investor decide to invest in any of the above zipcodes apart
 from 94301 which does not seem to have a positive return on investment.
 ### Conclusion
