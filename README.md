@@ -1,32 +1,23 @@
 ## FORECASTING REAL ESTATE PRICES USING TIME SERIES ANALYSIS
 
+### Executive Summary
 
 ***
-### Business Problem Understanding
+### Business Understanding
  #### [1.1 Background](##Background)
 In a constantly evolving real estate landscape, various elements, including economic shifts, population dynamics, market emotions, and regulatory shifts, converge to shape market trends. Acknowledging this complexity, the Kar-Dak Investment Group acknowledges the strategic advantage of harnessing data science methodologies to proactively uncover lucrative investment prospects.
-#### [1.2 Problem statement](Problem-statement)
- The goal of this project is to assist the Kar-Dak Investment Group in identifying the top 5 most promising zip codes for real estate investment opportunities. The analysis will be conducted using the Zillow housing dataset, which encompasses housing data spanning from April 1996 to April 2018. By leveraging this dataset, the project aims to pinpoint zip codes that have demonstrated strong potential for growth and return on investment within the specified time frame.
-
-The primary objective of this project is to facilitate informed real estate investment decisions for the Kar-Dak Investment Group. By leveraging the extensive Zillow housing dataset, which spans from April 1996 to April 2018, the project aims to identify the top 5 most favorable zip codes for potential investment opportunities.
+#### [1.2 Business Problem]( Business-Problem)
+ Property investment offers multiple revenue streams including leasing income and asset growth, and provides benefits such as passive income and portfolio diversification, which makes it an attractive option for many investors. However, the critical issue at hand is identifying optimal locations for real estate investment. The primary objective of this project is to facilitate informed real estate investment decisions for the Kar-Dak Investment Group. By leveraging the extensive Zillow housing dataset, which spans from April 1996 to April 2018, the project aims to identify the top 5 most favorable zip codes for potential investment opportunities.
 #### [1.3 Project Question](#Project-Question)
 This Project aims at answering the question:
- What are the top 5 best zip code areas for the Kar-Dak Investments to consider?
+1. What are the top 5 best zip code areas for the Kar-Dak Investments to consider?
  #### [1.4 Objectives](#Objectives)
 1. To identify the top 5 zip codes with the highest ROI.
 2. To develop time series models to forecast real estate prices for different zip codes over various time horizons.
 3. To establish cities that are optimal for both short-term and long-term investment
 ***
 ### Data Understanding
-In this section, we will do the following to get more insights about our dataset before proceeding to subsequent steps.
-
-1. Import the Libraries
-2. Load and Explore the Time Series Data
-3. Inspect the Data Types
-4. Inspect the column values
-The key columns in the dataset are as follows:
-
-`RegionID` This is unique Id for the Regions.
+Our dataset was obtained from zillow research website which ontained real state data. The key columns in the dataset are as follows:
 
 `RegionName` - This is the ranking done based on the size of the Region.
 
@@ -44,7 +35,7 @@ The key columns in the dataset are as follows:
 
 `Months Column` These Columns contains the prices of Region for every month.
 
-The dataset covers a significant time period (April 1996 to April 2018), allowing for the exploration of long-term trends and capturing various market conditions. It provides a valuable resource for conducting time series analysis and developing predictive models to forecast future stock prices
+The dataset covers a significant time period (April 1996 to April 2018), allowing for the exploration of long-term trends and capturing various market conditions. It provides a valuable resource for conducting time series analysis and developing predictive models to forecast prices
 
 ***
 ### Exploratory Data Analysis
@@ -52,21 +43,22 @@ The dataset covers a significant time period (April 1996 to April 2018), allowin
 The data was converted from a wide format to a long format before analysis.
 this stage of the analysis focused on such aspects as:
 
- 1. distribution of zip codes.
+#### [distribution of zip codes](#distribution-of-zip-codes)
 
 ![zipcode.png](images/zipcode.png)
 Based on the bar graph above, this shows that Los Angeles is the most popular county with around 70000 zipcodes.Most of the other counties range between 30000 and 50000 zipcodes.
 
-2. Average housing price pattern/trend over the years, that is, from year 1996 to 2018
+### [Average housing price pattern/trend over the years](Average-housing-price-pattern/trend-over-the-years)
 
 ![price.png](images/price.png)
-The graph shows that the average housing price has been increasing steadily over the years, with a dip between 2007 and 2012, during the financial crisis. Since then, the average housing price has rebounded and continued to rise
+The graph shows that the average housing price has been increasing steadily over the years, with a dip between 2007 and 2012. Since then, the average housing price has rebounded and continued to rise
 
-3. poperty value and distribution
+### [poperty value and distribution](poperty-value-and-distribution)
 ![property_value.png](images/property_value.png)
 
 Zipcode 10021,10011, 10014, 10128 in New York has properties with the highest value, followed by 94027 in California and 81611 in Colorado, and the other remaining Zipcodes range between 2 to 3 Million.
 
+### percentage of return on investents for the top ten states
 ![state_price.png](images/state_price.png)
 
 As observed, the percentage of return on investents for the top ten states had a crash in 2008 to 2012 and then from there they all have an upward linear trend. This also depicts the rising trent has been from 2012 onwards meaning 2018 remains highest in terms of investments returns.
