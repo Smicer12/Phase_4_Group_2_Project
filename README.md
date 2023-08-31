@@ -131,11 +131,10 @@ Once the model was evaluated and deemed satisfactory, it was used to make future
 ![forecasting.png](images/forecasting.png)
 As can be seen on the graph, zipcode 15201 has the highest return on investment followed by zipcodes 11222 and 11216. zipcode 94301 has the lowest return on investment.
 ### Conclusion
-Comparative Analysis of the Forecasting Models
-
+**Comparative Analysis of the Forecasting Models**
 The analysis presented a comprehensive comparison of three forecasting models: Autoregressive Integrated Moving Average (SARIMA), and Baseline ARIMA. Each model was assessed based on their predictive performance, statistical significance of coefficients, and alignment with historical trends. Below is a summary of the findings:
 
-Sarima model:
+**Sarima model:**
 
 The SARIMA models displayed competitive predictive performance, with relatively low MSE values across the test dataset. Each SARIMA model's parameter configuration was chosen to strike a balance between fitting and model simplicity. Notably, some p-values exceeded the significance threshold, indicating potential limitations in capturing certain variations. Despite these limitations, the SARIMA models effectively aligned with historical trends and provided insightful forecasts.
 
@@ -172,4 +171,15 @@ In conclusion, Diversification, ROI analysis, risk assessment, and careful consi
 
 ***
 ### Limitations
-since the data is from the internet it is not possible to verify the validity of the data. This can result in inaccuracies, errors, and inconsistencies that can compromise the integrity of the analysis.
+* Our model was delimited by overfitting wich may have caused our forecasting slightly deviate from the correct forecasting.
+
+## **Next Steps**
+
+
+* An external dataset with economic indicators can be integrated, to provide a
+  holistic view of factors influencing housing prices.
+* Augmenting the dataset with additional variables that might influence housing
+  prices, such as interest rates, unemployment rates, or local economic indicators. This could improve the predictive accuracy of the choosen model.
+  Housing market trends can change due to various unforeseen factors (e.g., economic downturns, pandemics, policy changes).
+  
+* To explore other tunimg techniques to improve on performance of the model.
