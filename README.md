@@ -1,11 +1,9 @@
-# FORECASTING REAL ESTATE PRICES USING TIME SERIES ANALYSIS
+## FORECASTING REAL ESTATE PRICES USING TIME SERIES ANALYSIS
 
 
 ***
 ### Business Problem Understanding
  #### [1.1 Background](##Background)
-The real estate market is dynamic and influenced by an array of factors ranging from economic trends and population growth to market sentiment and regulatory changes. Kar-Dak Investments Group recognizes the need to leverage data science techniques to gain a competitive edge in identifying high-potential investment opportunities.
-
 In a constantly evolving real estate landscape, various elements, including economic shifts, population dynamics, market emotions, and regulatory shifts, converge to shape market trends. Acknowledging this complexity, the Kar-Dak Investment Group acknowledges the strategic advantage of harnessing data science methodologies to proactively uncover lucrative investment prospects.
 #### [1.2 Problem statement](Problem-statement)
  The goal of this project is to assist the Kar-Dak Investment Group in identifying the top 5 most promising zip codes for real estate investment opportunities. The analysis will be conducted using the Zillow housing dataset, which encompasses housing data spanning from April 1996 to April 2018. By leveraging this dataset, the project aims to pinpoint zip codes that have demonstrated strong potential for growth and return on investment within the specified time frame.
