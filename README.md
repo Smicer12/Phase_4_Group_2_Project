@@ -29,15 +29,9 @@ The primary objective of this project is to facilitate informed real estate inve
 This Project aims at answering the question:
  What are the top 5 best zip code areas for the Kar-Dak Investments to consider?
  #### [1.4 Objectives](#Objectives)
- 1. To use Time Series Model to determine the top 5 zip codes to invest in
-2. To find the top 5 zip codes nationwide with the highest ROI within accepted standard deviation threshold (variability in returns)
-3. To Perform Forecasting for Future House Prices
-4. Develop time series models to forecast real estate prices for different zip codes over various time horizons.
-5. Evaluate the stability and predictability of real estate prices for different zip codes.
-6. Determine potential profit margins based on historical data and forecasted price growth.
-7. To Combine insights from the above analyses to make a comprehensive recommendation.
-8. To effectively identify cities that are optimal for both short-term and long-term investment
-9. To create user-friendly interfaces to facilitate easy access to forecast/ predictions and insights.
+1. To identify the top 5 zip codes with the highest ROI.
+2. To develop time series models to forecast real estate prices for different zip codes over various time horizons.
+3. To establish cities that are optimal for both short-term and long-term investment
 ***
 ### Data Understanding
 In this section, we will do the following to get more insights about our dataset before proceeding to subsequent steps.
@@ -137,11 +131,44 @@ Once the model was evaluated and deemed satisfactory, it was used to make future
 ![forecasting.png](images/forecasting.png)
 As can be seen on the graph, zipcode 15201 has the highest return on investment followed by zipcodes 11222 and 11216. zipcode 94301 has the lowest return on investment.
 ### Conclusion
-Based on the above graph, we can conclude that investors can decide to invest in any of the above zipcodes apart from 94301 which does not seem to have a positive return on investment.
+Comparative Analysis of the Forecasting Models
+
+The analysis presented a comprehensive comparison of three forecasting models: Autoregressive Integrated Moving Average (SARIMA), and Baseline ARIMA. Each model was assessed based on their predictive performance, statistical significance of coefficients, and alignment with historical trends. Below is a summary of the findings:
+
+Sarima model:
+
+The SARIMA models displayed competitive predictive performance, with relatively low MSE values across the test dataset. Each SARIMA model's parameter configuration was chosen to strike a balance between fitting and model simplicity. Notably, some p-values exceeded the significance threshold, indicating potential limitations in capturing certain variations. Despite these limitations, the SARIMA models effectively aligned with historical trends and provided insightful forecasts.
+
+ Based on the models the best five zipe codes were identified as ;
+1. **11216**: NY: Kings
+2. **11222**: NY: Kings
+3. **94043**: CA: Santa Clara
+4. **94301**: CA: Santa Clara
+5. **15201**: PA: Allegheny
+
+In conclusion, all two models showcased valuable forecasting capabilities with their unique strengths and limitations.
+The Baseline ARIMA, Tuned ARIMA, and SARIMA models excelled in capturing temporal dependencies. Although the model's forecasting may have been affected by other limitations.
 
 ***
 ### Recommendations
+* Based on the comprehensive analysis conducted using the provided dataset and
+  considering the states of Pennsylvania, Carlifonia, and New york, below are some key recommendations:
 
+* Consider Diversification: While all the analyzed states exhibit favorable
+  investment opportunities, consider diversifying the investment portfolio  across multiple states. This approach can help mitigate risk and capture various market dynamics.
+
+* Explore South Carolina: Given the higher volume of data originating from      South Carolina and the presence of two distinct cities (Greenville and
+ Florence), exploring properties in this state could provide a stable investment environment.
+
+* ROI as a Key Indicator: Return on Investment (ROI) is a critical metric for
+ evaluating the potential profitability of investments. Focus on cities with higher ROI figures, as they indicate efficient investment opportunities. Kings, Santa Clara, and Allegheny stand out with robust ROI values.
+
+* Risk Assessment: Take into consideration the Coefficient of Variation (CV) to assess investment risk. Lower CV values, like that of Greenville, indicate a more stable investment environment. Balancing ROI with risk is crucial for informed decision-making.
+
+* Location Matters: Consider the city's unique characteristics, development
+  prospects, and economic growth when making investment decisions. Evaluate factors like infrastructure, amenities, and potential for future demand.
+  
+In conclusion, Diversification, ROI analysis, risk assessment, and careful consideration of each city's unique attributes are crucial when making real estate investment decisions.
 
 ***
 ### Limitations
