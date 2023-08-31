@@ -1,19 +1,5 @@
-# Phase 4 Group 2 Project....
+# FORECASTING REAL ESTATE PRICES USING TIME SERIES ANALYSIS
 
-
-## Table of contents 
- ### [Business Understanding](#Business-Understanding)
- #### [1.1 Background](##Background)
- #### [1.2 Project Overview](#Project-Overview)
- #### [1.3 Project Question](#Project-Question)
- #### [1.4 Objectives](#Objectives)
- ### [Data Understanding](#Data-Understanding)
- ### [Exploratory data analysis](#Exploratory-data-analysis)
- #### [Data Conversion](#Data-Conversion)
- ### [Modelling](#Training-the-model)
- ### [Conclusion](#Conclusion)
- ### [Recommendations](#Recommendations)
- ### [Limitations](#Limitations)
 
 ***
 ### Business Problem Understanding
